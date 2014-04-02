@@ -8,14 +8,9 @@
 
 #import "LoginViewController.h"
 #import "LoginService.h"
-#import "LoginViewModel.h"
-#import <ReactiveCocoa/ReactiveCocoa.h>
 
-@implementation LoginViewController {
-    LoginViewModel* vm;
-}
+@implementation LoginViewController
 
-/*
 - (void)viewDidLoad {
     self.errormessageLabel.text = @"";
     self.activityIndicator.hidden = YES;
@@ -40,22 +35,6 @@
 
     self.activityIndicator.hidden = YES;
     self.loginButton.hidden = NO;
-}
-*/
-
-- (void)viewDidLoad {
-    vm = [LoginViewModel new];
-    vm.loginService = [LoginService new];
-
-    self.loginButton.rac_command = vm.loginCommand;
-
-    RAC(vm, username) = self.usernameField.rac_textSignal;
-    RAC(vm, password) = self.passwordField.rac_textSignal;
-
-    RAC(self.activityIndicator, hidden) = RACObserve(vm, isActivityIndicatorHidden);
-    RAC(self.loginButton, hidden) = RACObserve(vm, isLoginButtonHidden);
-    RAC(self.errormessageLabel, text) = RACObserve(vm, errorMessage);
-    RAC(self.errormessageLabel, textColor) = RACObserve(vm, errorColor);
 }
 
 @end
