@@ -31,10 +31,10 @@
         } else {
             self.errormessageLabel.text = @"wrong username or password";
         }
+        self.activityIndicator.hidden = YES;
+        self.loginButton.hidden = NO;
     }];
 
-    self.activityIndicator.hidden = YES;
-    self.loginButton.hidden = NO;
 }
 
 @end
