@@ -132,31 +132,6 @@ describe(@"LoginViewModel", ^{
         });
 
     });
-    
-    context(@"login button", ^{
-        
-        it(@"is enabled if form is valid", ^{
-            // then
-            [[theValue(sut.isFormValid) should] beYes];
-        });
-        
-        it(@"disabled if username is empty", ^{
-            // when
-            sut.username = @"";
-            
-            // then
-            [[theValue(sut.isFormValid) should] beNo];
-        });
-        
-        it(@"disabled if username is empty", ^{
-            // when
-            sut.password = @"";
-            
-            // then
-            [[theValue(sut.isFormValid) should] beNo];
-        });
-        
-    });
 
 });
 
