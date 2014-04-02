@@ -17,12 +17,9 @@
 		7994609518EC178500AC6E67 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7994609418EC178500AC6E67 /* XCTest.framework */; };
 		7994609618EC178500AC6E67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7994607B18EC178500AC6E67 /* Foundation.framework */; };
 		7994609718EC178500AC6E67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7994607F18EC178500AC6E67 /* UIKit.framework */; };
-		799460A118EC178500AC6E67 /* LoginViewModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 799460A018EC178500AC6E67 /* LoginViewModelTest.m */; };
 		799460AD18EC17CB00AC6E67 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799460AA18EC17CB00AC6E67 /* LoginView.xib */; };
 		799460AE18EC17CB00AC6E67 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 799460AC18EC17CB00AC6E67 /* LoginViewController.m */; };
 		ADEAF447962D8CCE8A16CCA6 /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEAFCFFD44BAFBC7719122D /* LoginService.m */; };
-		ADEAF449448094D4CCABB546 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEAF5CA7DD1D31256597700 /* LoginViewModel.m */; };
-		ADEAF4D31108F1A772F96E6B /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEAF5CA7DD1D31256597700 /* LoginViewModel.m */; };
 		ADEAF756BD162F8360DD1BCA /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEAFCFFD44BAFBC7719122D /* LoginService.m */; };
 /* End PBXBuildFile section */
 
@@ -50,12 +47,9 @@
 		7994609318EC178500AC6E67 /* ReactiveLoginDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveLoginDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7994609418EC178500AC6E67 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7994609C18EC178500AC6E67 /* ReactiveLoginDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReactiveLoginDemoTests-Info.plist"; sourceTree = "<group>"; };
-		799460A018EC178500AC6E67 /* LoginViewModelTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModelTest.m; sourceTree = "<group>"; };
 		799460AA18EC17CB00AC6E67 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		799460AB18EC17CB00AC6E67 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		799460AC18EC17CB00AC6E67 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		ADEAF5CA7DD1D31256597700 /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
-		ADEAF5DAFBAAEA894FCB1CB5 /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
 		ADEAFCFFD44BAFBC7719122D /* LoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginService.m; sourceTree = "<group>"; };
 		ADEAFFF33088C828F8445294 /* LoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginService.h; sourceTree = "<group>"; };
 		B50C6280B40D4DE59294374D /* Pods-ReactiveLoginDemoTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveLoginDemoTests.xcconfig"; path = "Pods/Pods-ReactiveLoginDemoTests.xcconfig"; sourceTree = "<group>"; };
@@ -134,8 +128,6 @@
 				7994608218EC178500AC6E67 /* Supporting Files */,
 				ADEAFFF33088C828F8445294 /* LoginService.h */,
 				ADEAFCFFD44BAFBC7719122D /* LoginService.m */,
-				ADEAF5DAFBAAEA894FCB1CB5 /* LoginViewModel.h */,
-				ADEAF5CA7DD1D31256597700 /* LoginViewModel.m */,
 			);
 			path = ReactiveLoginDemo;
 			sourceTree = "<group>";
@@ -153,7 +145,6 @@
 		7994609A18EC178500AC6E67 /* ReactiveLoginDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				799460A018EC178500AC6E67 /* LoginViewModelTest.m */,
 				7994609B18EC178500AC6E67 /* Supporting Files */,
 			);
 			path = ReactiveLoginDemoTests;
@@ -331,7 +322,6 @@
 				7994608818EC178500AC6E67 /* main.m in Sources */,
 				799460AE18EC17CB00AC6E67 /* LoginViewController.m in Sources */,
 				ADEAF447962D8CCE8A16CCA6 /* LoginService.m in Sources */,
-				ADEAF4D31108F1A772F96E6B /* LoginViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,9 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				799460A118EC178500AC6E67 /* LoginViewModelTest.m in Sources */,
 				ADEAF756BD162F8360DD1BCA /* LoginService.m in Sources */,
-				ADEAF449448094D4CCABB546 /* LoginViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
