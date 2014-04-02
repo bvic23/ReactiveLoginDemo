@@ -107,56 +107,6 @@ describe(@"LoginViewModel", ^{
 
     });
 
-    context(@"error color", ^{
-
-        it(@"black if login was successful", ^{
-            // given
-            mockLogin(YES);
-
-            // when
-            [sut.loginCommand execute:nil];
-
-            // then
-            [[expectFutureValue(sut.errorColor) shouldEventually] equal:[UIColor blackColor]];
-        });
-
-        it(@"red' if login failed", ^{
-            // given
-            mockLogin(NO);
-
-            // when
-            [sut.loginCommand execute:nil];
-
-            // then
-            [[expectFutureValue(sut.errorColor) shouldEventually] equal:[UIColor redColor]];
-        });
-
-    });
-    
-    context(@"login button", ^{
-        
-        it(@"is enabled if form is valid", ^{
-            // then
-            [[theValue(sut.isFormValid) should] beYes];
-        });
-        
-        it(@"disabled if username is empty", ^{
-            // when
-            sut.username = @"";
-            
-            // then
-            [[theValue(sut.isFormValid) should] beNo];
-        });
-        
-        it(@"disabled if username is empty", ^{
-            // when
-            sut.password = @"";
-            
-            // then
-            [[theValue(sut.isFormValid) should] beNo];
-        });
-        
-    });
 
 });
 

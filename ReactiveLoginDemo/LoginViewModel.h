@@ -24,7 +24,4 @@
 @property (nonatomic, readonly) BOOL isLoginButtonHidden;
 @property (nonatomic, readonly) NSString* errorMessage;
 
-@property (nonatomic, readonly) UIColor* errorColor;
-@property (nonatomic, readonly) BOOL isFormValid;
-
 @end
